@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+body {
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: 2px solid #dfdfdf;
+  padding: 8px 10px;
+  width: 200px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+input:focus, input:active, input:hover,
+button:focus, button:active, button:hover {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #00D0CB;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 10px;
+  margin: 20px;
+  border-radius: 4px;
+  border: none;
+}
+</style>
+</head>
+<body>
+  
+  <input type="text">
+  <button>Add Task</button>
+  <ul id="todo-list"></ul>
+
+<script id="jsbin-javascript">
+var addItem = function () {
+  document.getElementsByTagName('button')[0].value;
+  var newItemText = input.value;
+  var newItem = document.createElement('li');
+  newItem.innerHTML = newItemText;
+  document.getElementByID('todo-list').appendChild(newItem);
+  
+};
+
+document.getElementsByTagName('button')[0].addEventListener('click', addItem);
+</script>
+
+
+<script id="jsbin-source-css" type="text/css">body {
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: 2px solid #dfdfdf;
+  padding: 8px 10px;
+  width: 200px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+input:focus, input:active, input:hover,
+button:focus, button:active, button:hover {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #00D0CB;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 10px;
+  margin: 20px;
+  border-radius: 4px;
+  border: none;
+}</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">
+
+var addItem = function () {
+  document.getElementsByTagName('button')[0].value;
+  var newItemText = input.value;
+  var newItem = document.createElement('li');
+  newItem.innerHTML = newItemText;
+  document.getElementByID('todo-list').appendChild(newItem);
+  
+};
+
+document.getElementsByTagName('button')[0].addEventListener('click', addItem);</script></body>
+</html>

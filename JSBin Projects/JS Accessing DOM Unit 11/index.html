@@ -1,0 +1,83 @@
+<style id="jsbin-css">
+.current {
+  background-color: #FCDC13;
+}
+
+#next {
+  background-color: #FFA7C0;
+}
+
+.finished {
+  text-decoration: line-through;
+}
+
+.cool {
+  border: 2px solid #00D0CB;
+  margin: 5px 0;
+}
+</style>
+<h1>Reading List</h1>
+
+<ul class="list">
+  <li class="current">The Wind Up Bird Chronicle</li>
+  <li class="current">A Visit From the Goon Squad</li>
+  <li id="next">The Flamethrowers</li>
+  <li>To Kill a Mockingbird</li>
+  <li>Kafka on the Shore</li>
+</ul>
+
+<button id="chill">Chill!</button>
+<script id="jsbin-javascript">
+document.querySelectorAll('.current')[1].textContent = "The Violent Bear It Away";
+
+
+document.getElementById("next").textContent = "Me Talk Pretty One Day";
+
+
+document.querySelector('li').textContent = "Brothers Karamazov";
+
+
+document.getElementsByTagName('li')[3].textContent = "JavaScript is Fun!";
+</script>
+<script id="jsbin-source-html" type="text/html"><h1>Reading List</h1>
+
+<ul class="list">
+  <li class="current">The Wind Up Bird Chronicle</li>
+  <li class="current">A Visit From the Goon Squad</li>
+  <li id="next">The Flamethrowers</li>
+  <li>To Kill a Mockingbird</li>
+  <li>Kafka on the Shore</li>
+</ul>
+
+<button id="chill">Chill!</button>
+</script>
+
+<script id="jsbin-source-css" type="text/css">.current {
+  background-color: #FCDC13;
+}
+
+#next {
+  background-color: #FFA7C0;
+}
+
+.finished {
+  text-decoration: line-through;
+}
+
+.cool {
+  border: 2px solid #00D0CB;
+  margin: 5px 0;
+}
+</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">document.querySelectorAll('.current')[1].textContent = "The Violent Bear It Away";
+
+
+document.getElementById("next").textContent = "Me Talk Pretty One Day";
+
+
+document.querySelector('li').textContent = "Brothers Karamazov";
+
+
+document.getElementsByTagName('li')[3].textContent = "JavaScript is Fun!";
+</script>
